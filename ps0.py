@@ -67,7 +67,7 @@ def prime(number):
 	
 def is_perfect(number):
 
-	"""This function checks if the argument is a perfect number"""
+	"""This function checks if the argument is a perfect number and returns true if it is"""
 	
 	totalFactors = 0 #keeps track of the factors
 	count = 1
