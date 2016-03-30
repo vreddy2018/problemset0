@@ -1,7 +1,7 @@
 import ps0
 
 #0
-print("Odd even functions examples:")
+print("Odd even examples:")
 number = 5
 if ps0.odd_even(number):
 	print("{} is even.".format(number))
@@ -130,6 +130,28 @@ if ps0.is_perfect(number):
 else:
 	print("{} is not perfect.".format(number))
 
+number = 1
+if ps0.is_perfect(number):
+	print("{} is perfect.".format(number))
+else:
+	print("{} is not perfect.".format(number))
 
 #8
+print("\nSum of digits as a factor examples:")
 
+if ps0.sum_factor(number):
+	print("The sum of the digits in {} is a factor".format(number))
+else:
+	print("The sum of the digits in {} is not a factor".format(number))
+
+number = 22
+if ps0.sum_factor(number):
+	print("The sum of the digits in {} is a factor".format(number))
+else:
+	print("The sum of the digits in {} is not a factor".format(number))
+
+number = 12
+if ps0.sum_factor(number):
+	print("The sum of the digits in {} is a factor".format(number))
+else:
+	print("The sum of the digits in {} is not a factor".format(number))
