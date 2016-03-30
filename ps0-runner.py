@@ -6,7 +6,7 @@ function = raw_input("What function do you want to run? \n0. Odd or even \n1. Nu
 
 number = -1
 while number < 0:
-	number = int(raw_input("Enter the number you want to use (Must be a non-negative integer): "))
+	number = int(raw_input("Enter the number you want to use (must be a non-negative integer): "))
 
 
 
@@ -26,15 +26,19 @@ elif function == "2":
 	
 	
 elif function == "3":
-	print(ps0.sum_less_int(number))
 	
+	print(ps0.sum_less_int(number))
 	
 elif function == "4":
 	print(ps0.factorial(number))
 	
 	
 elif function == "5": 
-	if ps0.factor(number):
+	factor = -1
+	while factor < 0:
+		factor = int(raw_input("Enter a factor to check (must be positive): "))
+		
+	if ps0.factor(number, factor):
 		print("It is a factor")
 	else:
 		print("It is not a factor")
