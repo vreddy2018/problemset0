@@ -18,12 +18,13 @@ def digits(number):
 	
 def sum_digits(number):
 	"""This function returns the sum of every digit in the argument"""
-	total = 0
-	
-	for x in str(number): #goes through each digit and adds it to the total
-		total += int(x) 
-
-	return total
+	sum = 0
+	while number > 0:
+		newNumber = number %10
+		number -= newNumber
+		sum += newNumber
+		number /= 10
+	return sum
 
 
 def sum_less_int(number):
