@@ -8,9 +8,10 @@ def odd_even(number):
 
 def digits(number):
 	"""This function returns the number of digits in the argument"""
-	number = str(number)
+
 	count = 0
-	for x in number: 
+	while number > 0:
+		number /= 10 #keeps dividing by 10 until the number is a decimal
 		count += 1
 	return count
 	
