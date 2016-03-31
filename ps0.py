@@ -8,7 +8,6 @@ def odd_even(number):
 
 def digits(number):
 	"""This function returns the number of digits in the argument"""
-
 	count = 0
 	while number > 0:
 		number /= 10 #keeps dividing by 10 until the number is a decimal
@@ -20,10 +19,10 @@ def sum_digits(number):
 	"""This function returns the sum of every digit in the argument"""
 	sum = 0
 	while number > 0:
-		newNumber = number %10
-		number -= newNumber
-		sum += newNumber
-		number /= 10
+		lastDigit = number %10 #calculates the last digit of the number
+		number -= lastDigit 
+		sum += lastDigit
+		number /= 10 #gets rid of the last digit
 	return sum
 
 
