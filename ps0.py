@@ -61,8 +61,7 @@ def prime(number):
  			return True
 	 		exit()
  		count+=1
- 	else: 
- 		return False
+	return False
 
 	
 	
