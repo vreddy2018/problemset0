@@ -9,6 +9,8 @@ def odd_even(number):
 def digits(number):
 	"""This function returns the number of digits in the argument"""
 	count = 0
+	if number == 0:
+		count = 1
 	while number > 0:
 		number /= 10 #keeps dividing by 10 until the number is a decimal
 		count += 1
@@ -40,7 +42,7 @@ def factorial(number):
 	"""This function returns the factorial of the argument"""
 	totalFactorial = 1
 	while number > 1:
-		totalFactorial *= number - 1 #keeps multiplying by 1 less than the number until it reaches 1
+		totalFactorial *= number #keeps multiplying by 1 less than the number until it reaches 1
 		number -= 1
 	return totalFactorial
 	
@@ -59,7 +61,7 @@ def prime(number):
 	while count < number:
  		if number%count == 0: #runs through every number less than the number checking to see if anything produces no remainder, therefore there is a factor
  			return True
-	 		exit()
+
  		count+=1
 	return False
 
@@ -76,7 +78,7 @@ def is_perfect(number):
  				totalFactors += count #if the number the count is at is a factor (there is no remainder), then the count gets added so that the total factors is kept track of
  			count += 1
  			
-	if totalFactors == number:
+	if totalFactors == number and number != 0:
 		return True
 	else:
 		return False

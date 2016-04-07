@@ -38,6 +38,14 @@ print("There is/are {} digit(s) in {}.".format(ps0.digits(number),number))
 number = 36
 print("There is/are {} digit(s) in {}.".format(ps0.digits(number),number))
 
+number = 0
+print("There is/are {} digit(s) in {}.".format(ps0.digits(number),number))
+
+
+number = 14223
+print("There is/are {} digit(s) in {}.".format(ps0.digits(number),number))
+
+
 #2
 print("\nSum of digits examples:")
 
@@ -47,19 +55,30 @@ print("The sum of the digits in {} is {}.".format(number, ps0.sum_digits(number)
 number = 57
 print("The sum of the digits in {} is {}.".format(number, ps0.sum_digits(number)))
 
+number = 0
+print("The sum of the digits in {} is {}.".format(number, ps0.sum_digits(number)))
+
+
+number = 902384
+print("The sum of the digits in {} is {}.".format(number, ps0.sum_digits(number)))
 
 
 #3
 print("\nSum of integers less than number examples:")
 
-number = 5
+number = 20
 print("The sum of the integers less than {} is {}.".format(number, ps0.sum_less_int(number)))
 
-number = 20
+number = 312
 print("The sum of the integers less than {} is {}.".format(number, ps0.sum_less_int(number)))
 
 number = 1
 print("The sum of the integers less than {} is {}.".format(number, ps0.sum_less_int(number)))
+
+
+number = 0
+print("The sum of the integers less than {} is {}.".format(number, ps0.sum_less_int(number)))
+
 
 #4
 print("\nFactorial examples:")
@@ -68,6 +87,9 @@ number = 5
 print("{} factorial is {}.".format(number,ps0.factorial(number)))
 
 number = 0
+print("{} factorial is {}.".format(number,ps0.factorial(number)))
+
+number = 1
 print("{} factorial is {}.".format(number,ps0.factorial(number)))
 
 number = 11
@@ -123,6 +145,12 @@ if ps0.is_perfect(number):
 	print("{} is perfect.".format(number))
 else:
 	print("{} is not perfect.".format(number))
+
+number = 0
+if ps0.is_perfect(number):
+	print("{} is perfect.".format(number))
+else:
+	print("{} is not perfect.".format(number))
 	
 number = 28
 if ps0.is_perfect(number):
@@ -150,6 +178,7 @@ if ps0.sum_factor(number):
 else:
 	print("The sum of the digits in {} is not a factor".format(number))
 
+	
 number = 12
 if ps0.sum_factor(number):
 	print("The sum of the digits in {} is a factor".format(number))
