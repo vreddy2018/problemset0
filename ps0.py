@@ -60,10 +60,10 @@ def prime(number):
 	count = 2 #start count at 2 because 1 is a factor of every number
 	while count < number:
  		if number%count == 0: #runs through every number less than the number checking to see if anything produces no remainder, therefore there is a factor
- 			return True
+ 			return False
 
  		count+=1
-	return False
+	return True
 
 	
 	
